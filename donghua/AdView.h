@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AdView.h
 //  donghua
 //
 //  Created by ° 郭伟 on 2018/10/11.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AdView : UIView
+@property(nonatomic, strong)NSURL *movieURL;
 
-
+@property(nonatomic, strong)UIViewController *VC;
 @end
-

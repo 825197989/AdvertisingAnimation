@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E730596C216EFB640070C015 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E730596B216EFB640070C015 /* AppDelegate.m */; };
-		E730596F216EFB640070C015 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730596E216EFB640070C015 /* ViewController.m */; };
-		E7305972216EFB640070C015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7305970216EFB640070C015 /* Main.storyboard */; };
 		E7305974216EFB650070C015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7305973216EFB650070C015 /* Assets.xcassets */; };
 		E7305977216EFB650070C015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7305975216EFB650070C015 /* LaunchScreen.storyboard */; };
 		E730597A216EFB650070C015 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7305979216EFB650070C015 /* main.m */; };
 		E7305984216EFB650070C015 /* donghuaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7305983216EFB650070C015 /* donghuaTests.m */; };
 		E730598F216EFB650070C015 /* donghuaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E730598E216EFB650070C015 /* donghuaUITests.m */; };
+		E730599E216EFB790070C015 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730599D216EFB790070C015 /* RootViewController.m */; };
+		E73059A1216EFBB20070C015 /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = E73059A0216EFBB20070C015 /* AdView.m */; };
+		E73059A3216EFD380070C015 /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E73059A2216EFD380070C015 /* movie.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +39,6 @@
 		E7305967216EFB630070C015 /* donghua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = donghua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E730596A216EFB640070C015 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E730596B216EFB640070C015 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E730596D216EFB640070C015 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E730596E216EFB640070C015 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E7305971216EFB640070C015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7305973216EFB650070C015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7305976216EFB650070C015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7305978216EFB650070C015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,11 @@
 		E730598A216EFB650070C015 /* donghuaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = donghuaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E730598E216EFB650070C015 /* donghuaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = donghuaUITests.m; sourceTree = "<group>"; };
 		E7305990216EFB650070C015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E730599C216EFB790070C015 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E730599D216EFB790070C015 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E730599F216EFBB20070C015 /* AdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
+		E73059A0216EFBB20070C015 /* AdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
+		E73059A2216EFD380070C015 /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,17 @@
 		E7305969216EFB630070C015 /* donghua */ = {
 			isa = PBXGroup;
 			children = (
+				E73059A2216EFD380070C015 /* movie.mp4 */,
 				E730596A216EFB640070C015 /* AppDelegate.h */,
 				E730596B216EFB640070C015 /* AppDelegate.m */,
-				E730596D216EFB640070C015 /* ViewController.h */,
-				E730596E216EFB640070C015 /* ViewController.m */,
-				E7305970216EFB640070C015 /* Main.storyboard */,
 				E7305973216EFB650070C015 /* Assets.xcassets */,
 				E7305975216EFB650070C015 /* LaunchScreen.storyboard */,
 				E7305978216EFB650070C015 /* Info.plist */,
 				E7305979216EFB650070C015 /* main.m */,
+				E730599C216EFB790070C015 /* RootViewController.h */,
+				E730599D216EFB790070C015 /* RootViewController.m */,
+				E730599F216EFBB20070C015 /* AdView.h */,
+				E73059A0216EFBB20070C015 /* AdView.m */,
 			);
 			path = donghua;
 			sourceTree = "<group>";
@@ -237,7 +242,7 @@
 			files = (
 				E7305977216EFB650070C015 /* LaunchScreen.storyboard in Resources */,
 				E7305974216EFB650070C015 /* Assets.xcassets in Resources */,
-				E7305972216EFB640070C015 /* Main.storyboard in Resources */,
+				E73059A3216EFD380070C015 /* movie.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E730596F216EFB640070C015 /* ViewController.m in Sources */,
 				E730597A216EFB650070C015 /* main.m in Sources */,
 				E730596C216EFB640070C015 /* AppDelegate.m in Sources */,
+				E730599E216EFB790070C015 /* RootViewController.m in Sources */,
+				E73059A1216EFBB20070C015 /* AdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +306,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E7305970216EFB640070C015 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7305971216EFB640070C015 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E7305975216EFB650070C015 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = donghua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = donghua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
